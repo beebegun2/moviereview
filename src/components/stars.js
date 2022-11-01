@@ -8,7 +8,7 @@ export default function Stars() {
     console.log(`rating: ${newRating}⭐`)
   }
   return (
-    <ReactStars
+    <Stars
       count={5}
       color2={'#ffd700'}
       size={24}

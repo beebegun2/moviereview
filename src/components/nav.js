@@ -1,4 +1,4 @@
-
+//create the function Nav and export
 export default function Nav(){
     return(
 

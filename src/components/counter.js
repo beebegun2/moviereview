@@ -1,8 +1,10 @@
+//create the counter
 import React, {useState} from 'react';
 
   export default function Counter(){
     const [count, setCount]=useState(()=>{
-        return 0})
+      //console.log(count);  
+      return 0})
  
         const increment=()=>{
           setCount(prevCount => prevCount + 1)
@@ -18,4 +20,5 @@ import React, {useState} from 'react';
               </div>
 
             );
+            
 }

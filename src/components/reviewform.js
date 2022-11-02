@@ -6,18 +6,20 @@ import React from 'react';
 import '../App';
 
 
-
+//export review form
 export default function ReviewForm(props){
     const [addBtn, setAddBtn] = useState(true);
     const [form, setForm]= useState(false);
 
     const handleClick = event =>{
+        //console.log(handleClick);
         setForm(true);
         console.log('Show Form')
         setAddBtn(false);
         console.log('Hide review button')
     }
     const handleClose = event =>{
+        //console.log(handleClose);
         setForm(false);
         console.log('Form is hidden')
         setAddBtn(true);
@@ -46,14 +48,14 @@ export default function ReviewForm(props){
     let starsNum=[];
 
     const ratingChanged = (newRating) => {
-        console.log(`rating: ${newRating}⭐`);
+       //console.log(`rating: ${newRating}⭐`);
         let myRating = `${newRating}⭐`;
         starsNum.push(myRating);
     }
     
     function clickSave(){
-        console.log(`saved!`);
-        console.log(starsNum[0]);
+        //console.log(`saved!`);
+        //console.log(starsNum[0]);
         setReviewList(current => [...current, {
                 user: user.current.value,
                 item: review.current.value, 
@@ -68,6 +70,7 @@ export default function ReviewForm(props){
     const [allReviews, setAllReviews]= useState(false);
 
     function readReviews(){
+        //console.log(setAllReviews);
         setAllReviews(true);
         setAddBtn(false);
     }
@@ -97,7 +100,7 @@ export default function ReviewForm(props){
 
     }   
     
-
+//create the buttons onclick funtions
     return(
         <>
             {addBtn && ( 

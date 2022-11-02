@@ -5,7 +5,7 @@ import '../App.css';
 export default function Stars() {
   
   const ratingChanged = (newRating) => {
-    console.log(`rating: ${newRating}⭐`)
+    //console.log(`rating: ${newRating}⭐`)
   }
   return (
     <Stars

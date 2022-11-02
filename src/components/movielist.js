@@ -1,3 +1,5 @@
+//create list of movies links, title, year, and information then export list
+
 const list = [
     {   id: 1,
         img:"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGKEyjcxQn1M0Cd1Is3t3syI4bL9d91kQGTxSiueL8QI_zVgNg",

@@ -1,3 +1,4 @@
+//create component attribute
 import Form from './reviewform';
 
 export default function Movie(props){
